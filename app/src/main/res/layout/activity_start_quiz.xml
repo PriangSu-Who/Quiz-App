@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/quiz_app_bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartQuiz"
+    android:padding="16dp">
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/question"
+        android:layout_gravity="center"
+        android:layout_margin="20dp" />
+
+
+    <TextView
+        android:id="@+id/questionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your question"
+        android:textAlignment="center"
+        android:textColor="#0D47A1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/question_box_background" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+
+        <RadioButton
+            android:id="@+id/radio_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textAlignment="center"
+            android:textColor="#0D47A1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/question_box_background" />
+
+        <RadioButton
+            android:id="@+id/radio_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textAlignment="center"
+            android:textColor="#0D47A1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/question_box_background" />
+
+        <RadioButton
+            android:id="@+id/radio_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textAlignment="center"
+            android:textColor="#0D47A1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/question_box_background" />
+
+        <RadioButton
+            android:id="@+id/radio_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 4"
+            android:textAlignment="center"
+            android:textColor="#0D47A1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/question_box_background" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_box" />
+
+</LinearLayout>
